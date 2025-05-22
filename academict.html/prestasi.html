@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMP NEGERI 4 PIRIME</title>
+
+  <!-- Favicon Browser -->
+  <link rel="shortcut icon" href="../assets/imgs/Logo-Tut-Wuri-Handayani-PNG-Warna.png" type="image/x-icon">
+
+  <!-- Font Awesome (untuk ikon sosial media) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- font awesome sosmed  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+  <!-- Koneksi ke file CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+ 
+</head>
+<body>
+
+<!-- <style>
+  h4 {
+    color: black;
+    font-style: normal;
+    position: relative;
+  }
+</style> -->
+
+ <!-- Header Sekolah -->
+  <header class="header-center">
+    <img src="../assets/imgs/Logo-Tut-Wuri-Handayani-PNG-Warna.png" alt="Logo Sekolah" class="logo-glow">
+    <h1>SMP NEGERI 4 PIRIME</h1>
+  </header>
+
+  <!-- Navigasi Utama -->
+  <nav>
+    <a href="../index.html" class="active" onclick="setActive(event)">Beranda</a>
+
+    <div class="dropdown">
+      <a href="#profil" onclick="toggleDropdown(event)" id="profilDropdownToggle">Profil</a>
+      <div class="dropdown-menu" id="profilDropdownMenu">
+        <a href="../profil/sejara.html" onclick="setSubActive(event)">Sejarah Sekolah</a>
+        <a href="../profil/Visi.html" onclick="setSubActive(event)">Visi & Misi</a>
+        <a href="../profil/struksek.html" onclick="setSubActive(event)">Struktur Organisasi</a>
+        <a href="../profil/kepsek.html" onclick="setSubActive(event)">Kepala Sekolah</a>
+        <a href="../profil/guru-staf.html" onclick="setSubActive(event)">Guru & Staff</a>
+      </div>
+    </div>
+
+    <a href="../pages/tentang.html" onclick="setActive(event)">Tentang</a>
+
+    <div class="dropdown">
+      <a href="#akademik" onclick="toggleDropdown(event)" id="akademikDropdownToggle">Akademik</a>
+      <div class="dropdown-menu" id="akademikDropdownMenu">
+        <a href="../academict.html/kurikulum.html" onclick="setSubActive(event)">Kurikulum</a>
+        <a href="../academict.html/jadwal.html" onclick="setSubActive(event)">Jadwal Pelajaran</a>
+        <a href="../academict.html/kalender.html" onclick="setSubActive(event)">Kalender Akademik</a>
+        <a href="../academict.html/extrakurikuler.html" onclick="setSubActive(event)">Ekstrakurikuler</a>
+        <a href="../academict.html/prestasi.html" onclick="setSubActive(event)">Prestasi Siswa</a>
+      </div>
+    </div>
+
+     <div class="dropdown">
+      <a href="#info-siswa" onclick="toggleDropdown(event)" id="infoSiswaDropdownToggle">Informasi Siswa</a>
+      <div class="dropdown-menu" id="infoSiswaDropdownMenu">
+        <a href="../info/ppdb.html" onclick="setSubActive(event)">PPDB</a>
+        <a href="../info/absensi.html" onclick="setSubActive(event)">Absensi Siswa</a>
+        <a href="../info/Nilai.html" onclick="setSubActive(event)">Nilai dan Raport</a>
+      </div>
+    </div>
+
+    <a href="../pages/galeri.html" onclick="setActive(event)">Galeri</a>
+    <a href="../pages/penumuman.html" onclick="setActive(event)">Pengumuman</a>
+    <a href="../pages/fasilitas.html" onclick="setActive(event)">Fasilitas</a>
+    <a href="../pages/Kontak.html" onclick="setActive(event)">Kontak</a>
+  </nav>
+
+  <!-- Konten Utama -->
+  <main>
+  <section id="prestasi-siswa">
+    <h2>Prestasi Siswa</h2>
+    <p>
+      Siswa SMP NEGERI 4 PIRIME sering menorehkan prestasi di bidang akademik maupun non-akademik, baik di tingkat lokal, nasional, maupun internasional.
+    </p>
+  </section>
+
+  <h4><b>Prestasi-Siswa</b></h4>
+  <div class="container">
+    <img src="../assets/pictures/prestasi.jpg" alt="Profil Sekolah">
+    <div class="text">
+    Sekolah, seperti semua institusi, memiliki kekurangan atau tantangan yang sering dihadapi. Kekurangan ini bisa beragam,  <br>
+    mulai dari infrastruktur yang kurang memadai hingga masalah yang lebih luas seperti ketimpangan akses pendidikan,
+    kualitas guru, dan relevansi kurikulum. </p>
+  </div>
+  </div>
+  <br> <br>
+
+  </main>
+
+<!-- Ikon Sosial Media Lengkap -->
+ <h3>Ikuti Kami</h3>
+<section class="social-media">
+  <div class="social-icon"></div>
+  <a href="https://www.facebook.com/smpn4pirime" target="_blank" class="social-icon facebook" title="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.instagram.com/smpn4pirime" target="_blank" class="social-icon instagram" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.youtube.com/@smpn4pirime" target="_blank" class="social-icon youtube" title="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="https://www.tiktok.com/@smpn4pirime" target="_blank" class="social-icon tiktok" title="TikTok">
+    <i class="fab fa-tiktok"></i>
+  </a>
+  <a href="https://twitter.com/smpn4pirime" target="_blank" class="social-icon twitter" title="Twitter">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+  <a href="https://wa.me/6281234567890" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="mailto:info@smpn4pirime.sch.id" class="social-icon email" title="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a href="https://www.linkedin.com/company/smpn4pirime" target="_blank" class="social-icon linkedin" title="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://maps.google.com/?q=SMP+Negeri+4+Pirime" target="_blank" class="social-icon location" title="Lokasi">
+    <i class="fas fa-map-marker-alt"></i>
+  </a>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 SMP NEGERI 4 PIRIME. All rights reserved.
+  </footer>
+
+  <!-- Koneksi ke file JavaScript -->
+  <script src="../java/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+ /* Reset and base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+body {
+    width: 100%;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+ }
+
+
+.logo-glow {
+  width: 100px;
+  height: auto;
+  filter: drop-shadow(0 0 5px rgba(0, 123, 255, 0.8))
+          drop-shadow(0 0 10px rgba(0, 123, 255, 0.5));
+  transition: transform 0.3s ease;
+}
+
+/* .logo-glow:hover {
+  transform: scale(1.1);
+} */
+
+
+    header {
+      background-color: rgba(0,0,0,0.4);
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+
+    nav {
+      background-color: rgba(255,255,255,0.15);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem 2rem;
+      padding: 0.8rem 0;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: color 0.3s ease;
+      padding-bottom: 2px;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      cursor: pointer;
+      position: relative;
+      user-select: none;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #ffdd59;
+      border-color: #ffdd59;
+    }
+
+    /* Dropdown container */
+    .dropdown {
+      position: relative;
+    }
+
+    /* Dropdown toggle arrow */
+    .dropdown > a::after {
+      content: " ▼";
+      font-size: 0.6rem;
+      color: #ffd54f;
+      margin-left: 0.25em;
+    }
+
+    /* Dropdown menu */
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgba(0,0,0,0.85);
+      border-radius: 6px;
+      min-width: 180px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+      display: none;
+      flex-direction: column;
+      padding: 0.5rem 0;
+      user-select: none;
+      z-index: 1500;
+    }
+
+    .dropdown-menu a {
+      padding: 0.6rem 1.2rem;
+      font-weight: 500;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      color: #eee;
+      border-radius: 0;
+      text-align: left;
+      display: block;
+      white-space: nowrap;
+      transition: background 0.3s ease;
+      border-bottom: none;
+    }
+
+    .dropdown-menu a:hover,
+    .dropdown-menu a.active {
+      background-color: #ffdd59;
+      color: #111;
+      border-radius: 4px;
+    }
+
+    /* Show dropdown on hover desktop, toggle on mobile */
+    @media (hover: hover) {
+      .dropdown:hover > .dropdown-menu {
+        display: flex;
+      }
+    }
+
+    /* Show dropdown on click in mobile handled by JS */
+    @media (max-width: 700px) {
+      nav {
+        gap: 0.5rem 1rem;
+        justify-content: flex-start;
+        padding-left: 1rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      nav a {
+        font-size: 0.95rem;
+      }
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
+      max-width: 960px;
+      margin: 0 auto;
+      background-color: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      color: #eaeaea;
+    }
+
+    main h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      color: #fff;
+    }
+
+    main p {
+    text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      color: #ddd;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+    }
+
+/* btn selengkapnya  */
+     #btn {
+    text-align: center;
+    padding: 10px 20px;
+    color: #fff;
+    background: linear-gradient(90deg, #0078d7, #00b4ff);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 120, 215, 0.3);
+    
+}
+
+    #btn:hover,
+  #btn:focus {
+    text-align: center;
+    background: linear-gradient(90deg, #005ea1, #0086cc);
+    box-shadow: 0 6px 14px rgba(0, 94, 161, 0.6);
+    outline: none;
+  }
+ 
+
+    /* Gallery styling */
+    .gallery {
+      /* display: grid; */
+      /* grid-template-columns: repeat(auto-fill,minmax(120px,1fr)); */
+      gap: 10px;
+      margin-bottom: 1.5rem;
+    }
+    .gallery img {
+      width: 30%;
+      border-radius: 6px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+     
+}
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+/* footer pencipta */
+    footer {
+      background-color: rgba(0,0,0,0.45);
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ddd;
+      box-shadow: inset 0 1px 3px rgba(255,255,255,0.1);
+      margin-top: 2rem;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      main {
+        padding: 1.5rem 1rem;
+      }
+      main h2 {
+        font-size: 1.5rem;
+      }
+      main p {
+        font-size: 1rem;
+      }
+      .gallery {
+        grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+      }
+    }
+
+
+
+    /* Container utama kontak */
+.kontak-kami {
+  background: linear-gradient(135deg, #5f2c82, #49a09d);
+  padding: 40px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Flexbox untuk bagi dua: peta dan info */
+.kontak-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+/* Peta di kiri */
+.kontak-map {
+  flex: 1 1 50%;
+  min-height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Info di kanan */
+.kontak-info {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.kontak-info h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.kontak-info h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Paragraf info kontak */
+.kontak-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.kontak-info i {
+  margin-right: 10px;
+}
+
+h3{
+  text-align: center;
+}
+/* Gaya bagian sosial media */
+/* Sosial Media Styling */
+.social-media {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 10px;
+  padding: 20px;
+  /* background: #f4f4f4; */
+}
+
+.social-icon {
+  /*width: 50px;
+  height: 50px;
+  */border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  /* transition: all 0.3s ease; */
+  text-decoration: none;
+ box-shadow: red;
+}
+
+/* Efek hover */
+.social-icon:hover {
+  transform: scale(1.15);
+  opacity: 0.9;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+}
+
+/* navigasi Tengang awal */
+    /* Container utama untuk gambar dan teks */
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 30px; /* Jarak antara gambar dan teks */
+      max-width: 900px;
+      padding: 20px;
+    }
+
+    /* Gaya untuk gambar */
+    .container img {
+      box-shadow: red;
+      width: 200px;
+      height: 35vh;
+      border-radius: 8px;
+    }
+
+    /* Gaya untuk teks */
+    .text {
+      text-align: left; /* Teks rata kiri */
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    h4 {
+      /* transform: translateX(40px); */
+     text-align: center;
+}
+/* navigasi Tengang akhir */
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .kontak-container {
+    flex-direction: column;
+  }
+
+  .kontak-map, .kontak-info {
+    flex: 1 1 100%;
+  }
+}

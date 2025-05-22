@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMP NEGERI 4 PIRIME</title>
+
+  <!-- Favicon Browser -->
+  <link rel="shortcut icon" href="../assets/imgs/Logo-Tut-Wuri-Handayani-PNG-Warna.png" type="image/x-icon">
+
+  <!-- Font Awesome (untuk ikon sosial media) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Koneksi ke file CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+ 
+  <!-- <a href=""></a> -->
+
+
+</head>
+<body>
+
+
+
+
+ <!-- Header Sekolah -->
+  <header class="header-center">
+    <img src="../assets/imgs/Logo-Tut-Wuri-Handayani-PNG-Warna.png" alt="Logo Sekolah" class="logo-glow">
+    <h1>SMP NEGERI 4 PIRIME</h1>
+  </header>
+
+  <!-- Navigasi Utama -->
+  <nav>
+    <a href="../index.html" class="active" onclick="setActive(event)">Beranda</a>
+
+    <div class="dropdown">
+      <a href="#profil" onclick="toggleDropdown(event)" id="profilDropdownToggle">Profil</a>
+      <div class="dropdown-menu" id="profilDropdownMenu">
+        <a href="../profil/sejara.html" onclick="setSubActive(event)">Sejarah Sekolah</a>
+        <a href="../profil/Visi.html" onclick="setSubActive(event)">Visi & Misi</a>
+        <a href="../profil/struksek.html" onclick="setSubActive(event)">Struktur Organisasi</a>
+        <a href="../profil/kepsek.html" onclick="setSubActive(event)">Kepala Sekolah</a>
+        <a href="../profil/guru-staf.html" onclick="setSubActive(event)">Guru & Staff</a>
+      </div>
+    </div>
+
+    <a href="../pages/tentang.html" onclick="setActive(event)">Tentang</a>
+
+    <div class="dropdown">
+      <a href="#akademik" onclick="toggleDropdown(event)" id="akademikDropdownToggle">Akademik</a>
+      <div class="dropdown-menu" id="akademikDropdownMenu">
+        <a href="../academict.html/kurikulum.html" onclick="setSubActive(event)">Kurikulum</a>
+        <a href="../academict.html/jadwal.html" onclick="setSubActive(event)">Jadwal Pelajaran</a>
+        <a href="../academict.html/kalender.html" onclick="setSubActive(event)">Kalender Akademik</a>
+        <a href="../academict.html/extrakurikuler.html" onclick="setSubActive(event)">Ekstrakurikuler</a>
+        <a href="../academict.html/prestasi.html" onclick="setSubActive(event)">Prestasi Siswa</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#info-siswa" onclick="toggleDropdown(event)" id="infoSiswaDropdownToggle">Informasi Siswa</a>
+      <div class="dropdown-menu" id="infoSiswaDropdownMenu">
+        <a href="../info/ppdb.html" onclick="setSubActive(event)">PPDB</a>
+        <a href="../info/absensi.html" onclick="setSubActive(event)">Absensi Siswa</a>
+        <a href="../info/Nilai.html" onclick="setSubActive(event)">Nilai dan Raport</a>
+      </div>
+    </div>
+
+    <a href="../pages/galeri.html" onclick="setActive(event)">Galeri</a>
+    <a href="../pages/penumuman.html" onclick="setActive(event)">Pengumuman</a>
+    <a href="../pages/fasilitas.html" onclick="setActive(event)">Fasilitas</a>
+    <a href="../pages/Kontak.html" onclick="setActive(event)">Kontak</a>
+  </nav>
+
+  <!-- Konten Utama -->
+  <main>
+
+<section id="struktur-organisasi" class="section">
+    <h2>Struktur Organisasi</h2>
+    <p>
+      Struktur organisasi SMP NEGERI 4 PIRIME terdiri dari Kepala Sekolah, Wakil Kepala Sekolah,
+      Guru, Staff Administrasi, serta Komite Sekolah yang bersama-sama menjalankan fungsi pendidikan.
+    </p>
+  </section>
+
+
+ <iframe src="https://www.smpn3welahan.sch.id/wp-content/uploads/2024/10/Org_SMP3_24-25_page-0001-1-1024x791.jpg" 
+  frameborder="0" height="400" width="730" ></iframe>
+  </main>
+
+  <!-- Bagian Sosial Media -->
+  <!-- <section class="sosial-media">
+    <h3>Ikuti Kami</h3>
+    <div class="sosial-icons">
+      <a href="https://youtube.com" target="_blank" class="icon" title="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://facebook.com" target="_blank" class="icon" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wordpress.com" target="_blank" class="icon" title="WordPress">
+        <i class="fab fa-wordpress"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="icon" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </section> -->
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 SMP NEGERI 4 PIRIME. All rights reserved.
+  </footer>
+
+  <!-- Koneksi ke file JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

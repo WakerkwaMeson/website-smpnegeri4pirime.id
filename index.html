@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMP NEGERI 4 PIRIME</title>
+ 
+  <!-- favicion browser  -->
+   <link rel="shortcut icon" href="assets/imgs/Logo-Tut-Wuri-Handayani-PNG-Warna.png" type="image/x-icon">
+  
+   <!-- koneksi css  -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+  <!-- font awesome sosmed  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+   <style>
+    body {
+      background-image: url(../assets/imgs/background.jpg);
+      backdrop-filter: blur(7px);
+    }
+
+    #btn:hover {
+      text-align: center;
+    }    
+
+  </style>
+
+ <header>
+  <img src="assets/imgs/Logo-Tut-Wuri-Handayani-PNG-Warna.png" alt="Logo Sekolah" class="logo-glow">
+  <h1>SMP NEGERI 4 PIRIME</h1>
+</header>
+
+<nav>
+
+  <a href="index.html" class="active" onclick="setActive(event)">Beranda</a>
+
+  <div class="dropdown">
+    <a href="./profil/#" onclick="toggleDropdown(event)" id="profilDropdownToggle">Profil</a>
+    <div class="dropdown-menu" id="profilDropdownMenu">
+      <a href="./profil/sejara.html" onclick="setSubActive(event)">Sejarah Sekolah</a>
+      <a href="./profil/Visi.html" onclick="setSubActive(event)">Visi &amp; Misi</a>
+      <a href="./profil/struksek.html" onclick="setSubActive(event)">Struktur Organisasi</a>
+      <a href="./profil/kepsek.html" onclick="setSubActive(event)">Kepala Sekolah</a>
+      <a href="./profil/guru-staf.html" onclick="setSubActive(event)">Guru &amp; Staff</a>
+    </div>
+  </div>
+
+  <a href="./pages/tentang.html" onclick="setActive(event)">Tentang</a>
+  <a href="index.html">Beranda</a>
+
+  <div class="dropdown">
+    <a href="#akademik" onclick="toggleDropdown(event)" id="akademikDropdownToggle">Akademik</a>
+    <div class="dropdown-menu" id="akademikDropdownMenu">
+      <a href="#kurikulum" onclick="setSubActive(event)">Kurikulum</a>
+      <a href="#jadwal-pelajaran" onclick="setSubActive(event)">Jadwal Pelajaran</a>
+      <a href="#kalender-akademik" onclick="setSubActive(event)">Kalender Akademik</a>
+      <a href="#ekstrakurikuler" onclick="setSubActive(event)">Ekstrakurikuler</a>
+      <a href="#prestasi-siswa" onclick="setSubActive(event)">Prestasi Siswa</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#info-siswa" onclick="toggleDropdown(event)" id="infoSiswaDropdownToggle">Informasi Siswa</a>
+    <div class="dropdown-menu" id="infoSiswaDropdownMenu">
+      <a href="#ppdb" onclick="setSubActive(event)">PPDB</a>
+      <a href="#absensi-siswa" onclick="setSubActive(event)">Absensi Siswa</a>
+      <a href="#nilai-raport" onclick="setSubActive(event)">Nilai dan Raport</a>
+    </div>
+  </div>
+
+  <a href="./pages/galeri.html" onclick="setActive(event)">Galeri</a>
+  <a href="./pages/penumuman.html" onclick="setActive(event)">Pengumuman</a>
+  <a href="./pages/fasilitas.html" onclick="setActive(event)">Fasilitas</a>
+  <a href="./pages/Kontak.html" onclick="setActive(event)">Kontak</a>
+</nav>
+
+<main id="content">
+
+  <section id="beranda" class="section" style="display:block;">
+    <h2>Selamat Datang di Website kami <br> SMP NEGERI 4 PIRIME</h2>
+    <p>
+      SMP NEGERI 4 PIRIME adalah sekolah menengah pertama yang berkomitmen 
+      memberikan pendidikan berkualitas, mengembangkan karakter, dan membentuk generasi masa depan yang unggul.
+    </p>
+    <a href="#" id="btn">Selengkapnya...</a>
+
+  </section>
+
+  </main>
+
+<!-- akun sosial media  -->
+<!-- Ikon Sosial Media Lengkap -->
+ <h3>Ikuti Kami</h3>
+<section class="social-media">
+  <div class="social-icon"></div>
+  <a href="https://www.facebook.com/smpn4pirime" target="_blank" class="social-icon facebook" title="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.instagram.com/smpn4pirime" target="_blank" class="social-icon instagram" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.youtube.com/@smpn4pirime" target="_blank" class="social-icon youtube" title="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="https://www.tiktok.com/@smpn4pirime" target="_blank" class="social-icon tiktok" title="TikTok">
+    <i class="fab fa-tiktok"></i>
+  </a>
+  <a href="https://twitter.com/smpn4pirime" target="_blank" class="social-icon twitter" title="Twitter">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+  <a href="https://wa.me/6281234567890" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="mailto:info@smpn4pirime.sch.id" class="social-icon email" title="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a href="https://www.linkedin.com/company/smpn4pirime" target="_blank" class="social-icon linkedin" title="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://maps.google.com/?q=SMP+Negeri+4+Pirime" target="_blank" class="social-icon location" title="Lokasi">
+    <i class="fas fa-map-marker-alt"></i>
+  </a>
+</section>
+
+
+ 
+
+
+
+
+
+<footer>
+  &copy; 2024 SMP NEGERI 4 PIRIME. All rights reserved.
+</footer>
+
+<script src="java/script.js"></script>
+
+</body>
+</html>
